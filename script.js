@@ -26,7 +26,7 @@ const backgroundImages = [
     'pict 1.jpg',
     'level 2.jpg',
     'level 3.jpg',
-    'image/level 4.jpg',
+    'level 4.jpg',
     'image/level 5.jpg'
 ];
 
