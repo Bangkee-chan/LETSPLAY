@@ -23,11 +23,11 @@ const clickSound = document.getElementById('click-sound'); // Suara klik
 
 // Array untuk menyimpan path gambar latar belakang
 const backgroundImages = [
-    'https://github.com/Bangkee-chan/LETSPLAY/blob/main/pict%201.jpg',
-    'level 2.jpg',
-    'level 3.jpg',
-    'level 4.jpg',
-    'level 5.jpg'
+    'image/pict 1.jpg',
+    'image/level 2.jpg',
+    'image/level 3.jpg',
+    'image/level 4.jpg',
+    'image/level 5.jpg'
 ];
 
 // Menampilkan jumlah kesempatan, level, dan skor
