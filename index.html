@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Mari Tebak Angka Yuk</h1>
+            <p id="level-display">Level: 1</p>
+            <p id="timer">Waktu tersisa: 30 detik</p>
+        </div>
+        <div class="game-body">
+            <p id="instructions">Masukkan tebakanmu:</p>
+            <input type="number" id="guess-input" placeholder="1-100" min="1" max="100">
+            <button id="submit-btn">Tebak</button>
+            <p id="result"></p>
+            <p id="tries-left"></p>
+
+            <!-- Power-Up Buttons -->
+            <div class="power-ups">
+                <button id="add-time-btn">Tambah Waktu (+5 detik)</button>
+                <button id="hint-btn">Petunjuk</button>
+            </div>
+
+            <p id="score-display">Skor: 0</p>
+            <p id="reward-display"></p>
+        </div>
+        <button id="reset-btn" style="display: none;">Mulai Lagi</button>
+    </div>
+
+    <!-- Suara -->
+    <audio id="win-sound" src="yey menang.mp3"></audio>
+    <audio id="lose-sound" src="yah kalah.mp3"></audio>
+    <audio id="click-sound" src="Discord notification - sound effect.mp3"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

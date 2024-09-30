@@ -1,0 +1,174 @@
+/* Import Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('image/33.jpg'); /* Path ke gambar background */
+    background-size: cover; /* Gambar menutupi seluruh layar */
+    background-position: center; /* Gambar di pusatkan */
+    background-repeat: no-repeat; /* Gambar tidak diulang */
+    background-attachment: fixed; /* Gambar tetap ketika di-scroll */
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Ubah menjadi transparan dengan sedikit opacity */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Tetap berikan bayangan agar terlihat lebih modern */
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2em;
+    color: #333;
+}
+
+.game-header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#instructions {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    background-color: #f4f4f4;
+    outline: none;
+    color: #333;
+}
+
+button {
+    background: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#reset-btn {
+    display: none;
+    background: linear-gradient(135deg, #56CCF2 0%, #2F80ED 100%);
+    margin-top: 15px;
+}
+
+#result {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#tries-left {
+    margin-top: 10px;
+    color: #888;
+}
+
+/* Power-up buttons */
+.power-ups {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.power-ups button {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.power-ups button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.power-ups button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#score-display {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 10px;
+}
+
+#reward-display {
+    font-size: 1.2em;
+    color: #FF6F61;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+@keyframes win-animation {
+    0% { color: green; transform: scale(1); }
+    50% { color: yellow; transform: scale(1.5); }
+    100% { color: green; transform: scale(1); }
+}
+
+@keyframes lose-animation {
+    0% { color: red; transform: scale(1); }
+    50% { color: black; transform: scale(1.5); }
+    100% { color: red; transform: scale(1); }
+}
+
+#result.win {
+    animation: win-animation 1s infinite;
+}
+
+#result.lose {
+    animation: lose-animation 1s infinite;
+}
+
+/* Responsif */
+@media only screen and (max-width: 600px) {
+    .game-container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+} 
