@@ -23,7 +23,7 @@ const clickSound = document.getElementById('click-sound'); // Suara klik
 
 // Array untuk menyimpan path gambar latar belakang
 const backgroundImages = [
-    'image/pict 1.jpg',
+    'pict 1.jpg',
     'image/level 2.jpg',
     'image/level 3.jpg',
     'image/level 4.jpg',
