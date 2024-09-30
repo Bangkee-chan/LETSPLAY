@@ -27,7 +27,7 @@ const backgroundImages = [
     'level 2.jpg',
     'level 3.jpg',
     'level 4.jpg',
-    'image/level 5.jpg'
+    'level 5.jpg'
 ];
 
 // Menampilkan jumlah kesempatan, level, dan skor
