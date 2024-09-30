@@ -23,7 +23,7 @@ const clickSound = document.getElementById('click-sound'); // Suara klik
 
 // Array untuk menyimpan path gambar latar belakang
 const backgroundImages = [
-    'pict 1.jpg',
+    'https://github.com/Bangkee-chan/LETSPLAY/blob/main/pict%201.jpg',
     'level 2.jpg',
     'level 3.jpg',
     'level 4.jpg',
